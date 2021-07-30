@@ -1,0 +1,13 @@
+section {
+  background-image: url("/assets/background_bottom.png"), url("/assets/background_sun.png"), url("/assets/background_clouds.png"), url("/assets/background_clouds_2.png");
+  background-position: bottom, top, top, top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+
+.strain-img {
+  max-height: 200px;
+  margin-top: -50px;
+  object-fit: contain;
+}
