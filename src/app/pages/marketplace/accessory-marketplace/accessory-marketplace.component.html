@@ -2,7 +2,7 @@
   <div class="row justify-content-center" *ngIf="!(account$ | async)">
 
     <div class="col-12 text-center">
-      <h1>Please connect your wallet</h1>
+      <h1>Please Connect Your Wallet</h1>
 
     </div>
     <div class="col-auto">
@@ -22,7 +22,7 @@
           <mat-card-header>
             <mat-card-title>{{trade.accessory.type | accessoryType}}</mat-card-title>
             <mat-card-subtitle>
-              Boost: +{{trade.accessory.boost}} Grow Rate
+              Boost: +{{trade.accessory.boost}} Growth Rate
             </mat-card-subtitle>
             <mat-card-subtitle class="harvest-title">
               <span>On Sale for {{(+trade.strainzTokenPrice / 10000) | number:'1.0-4'}}</span>
@@ -48,14 +48,14 @@
     </div>
   </ng-container>
 
-  <h1>Accessories available to Buy</h1>
+  <h1>Accessories Available to Buy</h1>
   <div *ngIf="(openTrades$ | async) as trades" class="row px-1">
     <div class="col-12 col-md-6 col-lg-4 col-xl-3 px-1" *ngFor="let trade of trades.slice().reverse()">
       <mat-card>
         <mat-card-header>
           <mat-card-title>{{trade.accessory.type | accessoryType}}</mat-card-title>
           <mat-card-subtitle>
-            Boost: +{{trade.accessory.boost}} Grow Rate
+            Boost: +{{trade.accessory.boost}} Growth Rate
           </mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
