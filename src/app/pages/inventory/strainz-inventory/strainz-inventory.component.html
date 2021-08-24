@@ -2,7 +2,7 @@
   <div class="row justify-content-center" *ngIf="!(account)">
 
     <div class="col-12 text-center">
-      <h1>Please connect your wallet</h1>
+      <h1>Please Connect Your Wallet</h1>
 
     </div>
     <div class="col-auto">
@@ -17,14 +17,14 @@
 
       <div class="col-12 col-md-auto budz-container pb-3 pb-md-0">
         {{(myStrainzTokens$ | async) / 10000 | number:'1.0-2'}}
-        <img src="assets/budz.png">
+        &nbsp;<strong>Strainz</strong> <img src="assets/budz.png">
         <span class="ml-1">{{(mySeedzTokens$  | async) / 1000000000000000000 | number:'1.0-2' }}</span>
-        <img src="assets/seedz.png">
+        &nbsp;<strong>Seedz</strong> <img src="assets/seedz.png">
 
       </div>
 
       <div class="col-12 col-md-4">
-        <button class="w-100" color="accent" mat-raised-button (click)="harvestAndWaterAll()">
+        <button class="w-110" color="accent" mat-raised-button (click)="harvestAndWaterAll()">
           <span>Harvest & Water ({{(totalHarvestAmount - totalWaterCost) / 10000 | number:'1.0-2'}}</span>
           <img src="assets/budz.png">
           <span>)</span>
