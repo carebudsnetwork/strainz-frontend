@@ -21,7 +21,7 @@
         <a *ngIf="!(inventoryShown$ | async)" mat-list-item routerLink="/inventory/strainz" routerLinkActive="active">My Wallet</a>
         <div class="foldable-container" *ngIf="inventoryShown$ | async">
           <h>My Wallet</h>
-          <a mat-list-item routerLink="/inventory/strainz" routerLinkActive="active">Strainz</a>
+          <a mat-list-item routerLink="/inventory/strainz" routerLinkActive="active">Strainz NFTs</a>
           <a mat-list-item routerLink="/offers" routerLinkActive="active">Offers</a>
         </div>
 
@@ -32,7 +32,7 @@
         <a *ngIf="!(marketPlaceShown$ | async)" mat-list-item routerLink="/marketplace/strainz" routerLinkActive="active">Marketplace</a>
         <div class="foldable-container" *ngIf="marketPlaceShown$ | async">
           <h>Marketplace</h>
-          <a mat-list-item routerLink="/marketplace/strainz" routerLinkActive="active">Strainz</a>
+          <a mat-list-item routerLink="/marketplace/strainz" routerLinkActive="active">Strainz NFTs</a>
           <a mat-list-item routerLink="/marketplace/accessories" routerLinkActive="active">Accessories</a>
           <!--a mat-list-item routerLink="/marketplace/other" routerLinkActive="active">Other NFTs</a-->
         </div>
@@ -58,19 +58,18 @@
 
         <mat-divider></mat-divider>
 
-        <a mat-list-item routerLink="/migrate" routerLinkActive="active">Migrate from V2</a>
-
-        <mat-divider></mat-divider>
-
-        <a target="_blank" mat-list-item href="https://exchange.pancakeswap.finance/#/swap?inputCurrency=BNB&outputCurrency=0xacC870D9e560f784ceFf365f56e1f12161324478" >
-                <img mat-list-icon src="https://exchange.pancakeswap.finance/favicon.png">
-          PancakeSwap <img src="assets/budz.png" class="currency">
+        <a target="_blank" mat-list-item href="https://bscscan.com/token/0xacc870d9e560f784ceff365f56e1f12161324478" >
+                <img mat-list-icon src="assets/bscscan-logo-circle.png">
+          Strainz Contract<img src="assets/budz.png" class="currency">
         </a>
-        <a target="_blank" mat-list-item href="https://exchange.pancakeswap.finance/#/swap?inputCurrency=0xacC870D9e560f784ceFf365f56e1f12161324478&outputCurrency=0x15C0C1740877CaCC5C839BF4C9BC5cEFF80D78A9" >
-          <img mat-list-icon src="https://exchange.pancakeswap.finance/favicon.png">
-          PancakeSwap<img src="assets/seedz.png" class="currency">
+        <a target="_blank" mat-list-item href="https://bscscan.com/token/0x15C0C1740877CaCC5C839BF4C9BC5cEFF80D78A9" >
+          <img mat-list-icon src="assets/bscscan-logo-circle.png">
+          Seedz Contract<img src="assets/seedz.png" class="currency">
         </a>
-
+        <a target="_blank" mat-list-item href="https://bscscan.com/token/0x2bc47e45abbb6bc55890eab4940aa9946e24560f" >
+          <img mat-list-icon src="assets/bscscan-logo-circle.png">
+          NFT Contract<img src="assets/StrainzNFTicon.png" class="currency">
+        </a>
 
 
         <a target="_blank" mat-list-item href="https://t.me/strainz_chat">
