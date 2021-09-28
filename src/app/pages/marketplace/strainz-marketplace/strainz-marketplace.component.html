@@ -13,7 +13,7 @@
   <app-strainz-sort-header (sortChanged)="sortChanged($event)"></app-strainz-sort-header>
 </section>
 <section class="container-fluid">
-  <div *ngIf="(openTrades$ | async) as trades" class="row px-1">
+  <div *ngIf="(openTrades$ | async) as trades" class="row">
     <div class="col-12 col-md-auto flex-grow-1 strain-card" *ngFor="let trade of trades">
       <app-strain-card [strain]="trade.strain" [trade]="trade" [isPublic]="true" [approvedStrainzTokens]="approvedBudz"></app-strain-card>
     </div>

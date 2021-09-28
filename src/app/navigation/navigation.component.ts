@@ -25,6 +25,7 @@ export class NavigationComponent implements OnInit {
 
   marketPlaceShown$: Observable<boolean>;
   inventoryShown$: Observable<boolean>;
+  buyStrainzShown$: Observable<boolean>;
 
 
   constructor(private breakpointObserver: BreakpointObserver, private weedService: WeedService,
@@ -47,6 +48,12 @@ export class NavigationComponent implements OnInit {
     this.inventoryShown$ = navEvents.pipe(
       map(event => {
         return (event as any).url?.startsWith('/inventory') || (event as any).url?.startsWith('/offers');
+
+      })
+    );
+    this.buyStrainzShown$ = navEvents.pipe(
+      map(event => {
+        return (event as any).url?.startsWith('/buystrainz');
 
       })
     );

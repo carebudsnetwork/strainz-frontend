@@ -76,6 +76,7 @@ import { MakeOfferDialogComponent } from './dialogs/make-offer-dialog/make-offer
 import { OffersOverviewComponent } from './pages/offers-overview/offers-overview.component';
 import { MigrationComponent } from './pages/migration/migration.component';
 import {MatStepperModule} from '@angular/material/stepper';
+import { BuystrainzComponent } from './pages/buystrainz/buystrainz.component';
 
 @NgModule({
   declarations: [
@@ -122,6 +123,7 @@ import {MatStepperModule} from '@angular/material/stepper';
     MakeOfferDialogComponent,
     OffersOverviewComponent,
     MigrationComponent,
+    BuystrainzComponent,
   ],
   imports: [
     BrowserModule,

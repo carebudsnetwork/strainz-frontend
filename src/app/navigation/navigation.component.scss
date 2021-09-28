@@ -19,7 +19,7 @@ h3 {
   top: 0;
   z-index: 1;
 
-  background-image: url("/assets/banner-text.png"), url("/assets/banner-left.png"), url("/assets/banner-right.png");
+  background-image: url("/assets/banner-text.png"), url("/assets/banner-left-dk.png"), url("/assets/banner-right-dk.png");
   background-position: center, left, right;
   background-size: auto 100px;
   background-repeat: no-repeat;
@@ -81,3 +81,9 @@ mat-nav-list {
 .foldable-container {
   background-color: lightgray;
 }
+
+.dmMR-4{
+  margin-right: 8%;
+}
+
+

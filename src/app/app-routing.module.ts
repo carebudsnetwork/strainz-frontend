@@ -17,6 +17,7 @@ import { CommunityComponent } from './pages/community/community.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { OffersOverviewComponent } from './pages/offers-overview/offers-overview.component';
 import { MigrationComponent } from './pages/migration/migration.component';
+import {BuystrainzComponent} from "./pages/buystrainz/buystrainz.component";
 
 const routes: Routes = [
   {
@@ -46,6 +47,11 @@ const routes: Routes = [
   {
     path: 'community',
     component: CommunityComponent,
+
+  },
+  {
+    path: 'buystrainz',
+    component: BuystrainzComponent,
 
   },
   {

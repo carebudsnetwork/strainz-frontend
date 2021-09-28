@@ -31,7 +31,7 @@
               <h2>Prices</h2>
             </div>
             <div class="col-12 col-md-6 my-1 prices-left">
-              <mat-card class="permanent-marker">
+              <mat-card>
                 <h2>1 BNB = {{strainzBnbRoute.midPrice.toSignificant(6) / 10000 | number:'1.0-6'}} <img src="assets/budz.png"
                                                                                                 class="budz"></h2>
                 <h2>1 <img src="assets/budz.png" class="budz">
@@ -42,7 +42,7 @@
 
             </div>
             <div class="col-12 col-md-6 prices-right my-1">
-              <mat-card class="permanent-marker">
+              <mat-card>
 
                 <h2>1 <img src="assets/budz.png" class="budz">
                   = {{strainzSeedzRoute.midPrice.invert().toSignificant(6) * 10000 | number:'1.0-6'}}  <img
@@ -70,7 +70,7 @@
           <h2>Liquidity</h2>
         </div>
         <div class="col-12 col-md-6 my-1 ">
-          <mat-card class="permanent-marker">
+          <mat-card>
             <mat-card-header>
               <mat-card-title>STRAINZ / BNB</mat-card-title>
               <mat-card-subtitle>TVL: {{strainzBnbTVL | number:'1.0-0'}} BUSD</mat-card-subtitle>
@@ -82,7 +82,7 @@
 
         </div>
         <div class="col-12 col-md-6  my-1">
-          <mat-card class="permanent-marker">
+          <mat-card>
             <mat-card-header>
               <mat-card-title>STRAINZ / SEEDZ</mat-card-title>
               <mat-card-subtitle>TVL: {{seedzStrainzTVL | number:'1.0-0'}} BUSD</mat-card-subtitle>

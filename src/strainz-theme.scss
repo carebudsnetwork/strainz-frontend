@@ -95,3 +95,15 @@ $strainz-app-theme: mat-light-theme((
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($strainz-app-theme);
+
+$strainz-app-dark-theme: mat-dark-theme((
+  color: (
+    primary: mat-palette($strainz-primary-palette),
+    accent: mat-palette($strainz-secondary-palette),
+    warn: $strainz-app-warn,
+  )
+));
+
+.darkmode {
+  @include angular-material-theme($strainz-app-dark-theme);
+}
