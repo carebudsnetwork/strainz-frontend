@@ -64,7 +64,6 @@
   <ng-container *ngIf="strainzBnbPair$ | async as strainzBnbPair">
     <ng-container *ngIf="strainzSeedzPair$ | async as strainzSeedzPair">
 
-
       <div class="row mt-5">
         <div class="col-12 text-center">
           <h2>Liquidity</h2>
@@ -75,9 +74,10 @@
               <mat-card-title>STRAINZ / BNB</mat-card-title>
               <mat-card-subtitle>TVL: {{strainzBnbTVL | number:'1.0-0'}} BUSD</mat-card-subtitle>
             </mat-card-header>
-            <h2 class="prices-left"> {{strainzBnbPair.reserveOf(STRAINZ).toSignificant(6) / 10000 | number:'1.0-6'}} <img src="assets/budz.png"
-                                                                                              class="budz"></h2>
+
+            <h2 class="prices-left"> {{strainzBnbPair.reserveOf(STRAINZ).toSignificant(6) / 10000 | number:'1.0-6'}} <img src="assets/budz.png" class="budz"></h2>
             <h2 class="prices-left"> {{strainzBnbPair.reserveOf(BNB).toSignificant(6)| number:'1.0-6'}} BNB</h2>
+            <h5 class="prices-left"> Contract Address: 0xacc870d9e560f784ceff365f56e1f12161324478  </h5>
           </mat-card>
 
         </div>
@@ -90,9 +90,10 @@
             </mat-card-header>
 
             <h2 class="prices-right"> {{strainzSeedzPair.reserveOf(STRAINZ).toSignificant(6) / 10000| number:'1.0-6'}} <img src="assets/budz.png"
-                                                                                               class="budz"></h2>
+                                                                                                                            class="budz"></h2>
             <h2 class="prices-right"> {{strainzSeedzPair.reserveOf(SEEDZ).toSignificant(6)| number:'1.0-6'}} <img src="assets/seedz.png"
-                                                                                             class="budz"></h2>
+                                                                                                                  class="budz"></h2>
+            <h5 class="prices-right"> Contract Address: 0x15C0C1740877CaCC5C839BF4C9BC5cEFF80D78A9  </h5>
 
           </mat-card>
         </div>
